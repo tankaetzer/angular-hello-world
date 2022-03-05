@@ -10,6 +10,7 @@ import { CourseService } from './../course.service';
 export class CourseComponent implements OnInit {
   title: string = 'Hello Angular';
   courses: Array<string> = [];
+  imageUrl: string = 'https://picsum.photos/250?image=9';
 
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses();
