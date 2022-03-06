@@ -9,3 +9,10 @@
     <button class="btn-primary" [style.backgroundColor]="'green'" (click)="onSave($event)">Save</button>
 </div>
 <input [(ngModel)]="email"  (keyup.enter)="onEnter()" />
+
+<br />
+{{course.title | uppercase}}<br />
+{{course.students | number}}<br />
+{{course.rating | number:'3.2-3'}}<br />
+{{course.price | currency:'MYR'}}<br />
+{{course.releaeseDate | date:'medium'}}<br />

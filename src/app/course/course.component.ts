@@ -13,6 +13,14 @@ export class CourseComponent implements OnInit {
   imageUrl: string = 'https://picsum.photos/250?image=9';
   email: string = 'tankaetzer@gmail.com';
 
+  course = {
+    title: 'The Complete Angular Course',
+    rating: 4.9,
+    students: 30123,
+    price: 190.95,
+    releaeseDate: new Date(2016, 3, 1),
+  };
+
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses();
   }
