@@ -17,3 +17,8 @@
 {{course.price | currency:'MYR'}}<br />
 {{course.releaeseDate | date:'medium'}}<br />
 {{text | summary:10:'Hello World'}}
+
+<div *ngIf="courses.length > 1; then coursesList else noCourses">
+</div>
+<ng-template #coursesList>List of courses</ng-template>
+<ng-template #noCourses>No courses yet</ng-template>

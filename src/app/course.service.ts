@@ -7,6 +7,6 @@ export class CourseService {
   constructor() {}
 
   getCourses(): Array<string> {
-    return ['angular', 'spring', 'typescript'];
+    return [];
   }
 }
