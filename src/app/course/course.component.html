@@ -4,5 +4,7 @@
         <p>{{course}}</p>
     </li>
 </ul>
-<img [src]="imageUrl"/>
-<button class="btn-primary" [style.backgroundColor]="'green'">Save</button>
+<img [src]="imageUrl" />
+<div (click)="onDivClick()">
+    <button class="btn-primary" [style.backgroundColor]="'green'" (click)="onSave($event)">Save</button>
+</div>
