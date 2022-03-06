@@ -1,6 +1,11 @@
-<div
+<!-- <div
   class="spinner-border"
   [class.text-primary]="isFavourite"
   [class.text-danger]="!isFavourite"
   (click)="onClick()"
-></div>
+></div> -->
+
+<div class="spinner-border" [ngClass]="{
+    'text-primary': isFavourite,
+    'text-danger': !isFavourite
+  }" (click)="onClick()"></div>
