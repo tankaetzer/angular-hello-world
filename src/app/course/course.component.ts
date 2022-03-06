@@ -11,6 +11,7 @@ export class CourseComponent implements OnInit {
   title: string = 'Hello Angular';
   courses: Array<string> = [];
   imageUrl: string = 'https://picsum.photos/250?image=9';
+  email: string = 'tankaetzer@gmail.com';
 
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses();
@@ -27,7 +28,7 @@ export class CourseComponent implements OnInit {
     console.log('Div was clicked');
   }
 
-  onEnter(email: string) {
-    alert(email);
+  onEnter() {
+    alert(this.email);
   }
 }
