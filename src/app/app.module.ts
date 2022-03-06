@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { FavouriteComponent } from './favourite/favourite.component';
+import { InputFormatDirective } from './input-format.directive';
 import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { SummaryPipe } from './summary.pipe';
     CourseComponent,
     SummaryPipe,
     FavouriteComponent,
+    InputFormatDirective,
   ],
   imports: [FormsModule, BrowserModule, AppRoutingModule],
   providers: [],
