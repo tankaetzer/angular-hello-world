@@ -22,3 +22,13 @@
 </div>
 <ng-template #coursesList>List of courses</ng-template>
 <ng-template #noCourses>No courses yet</ng-template>
+
+<div>
+    <button (click)="viewMode = 'map'">Map View</button>
+    <button (click)="viewMode = 'list'">List View</button>
+    <div [ngSwitch]="viewMode">
+        <div *ngSwitchCase="'map'">Map</div>
+        <div *ngSwitchCase="'list'">List</div>
+        <div *ngSwitchDefault>Otherwise</div>
+    </div>
+</div>

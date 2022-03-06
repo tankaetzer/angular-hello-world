@@ -23,6 +23,8 @@ export class CourseComponent implements OnInit {
     releaeseDate: new Date(2016, 3, 1),
   };
 
+  viewMode: string = 'zzzz';
+
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses();
   }
