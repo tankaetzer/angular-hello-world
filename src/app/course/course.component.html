@@ -8,4 +8,4 @@
 <div (click)="onDivClick()">
     <button class="btn-primary" [style.backgroundColor]="'green'" (click)="onSave($event)">Save</button>
 </div>
-<input (keyup.enter)="onEnter()" />
+<input #email (keyup.enter)="onEnter(email.value)" />

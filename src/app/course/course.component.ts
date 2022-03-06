@@ -27,7 +27,7 @@ export class CourseComponent implements OnInit {
     console.log('Div was clicked');
   }
 
-  onEnter() {
-    alert('enter');
+  onEnter(email: string) {
+    alert(email);
   }
 }
